@@ -1,0 +1,354 @@
+/* font-family: 'Varela Round', sans-serif; */
+div{
+   width: 75px;
+  height: 75px; 
+/*   box-sizing: border-box; 
+  border: 1px green dashed;  */
+}
+
+/* .hidden1 {
+  display: none;
+}
+
+.actual_planet {
+  width: 75px; 
+  height: 75px;
+}
+
+.actual_earth {
+  position: absolute;
+  height: 100%;
+/*   top: 1.25%; */
+  bottom: 115%;
+  left: .75%;
+}
+
+
+.hidden2 {
+  display: none;
+} */
+
+
+.astroid_pic{
+/*   width:75px;
+  height:75px; */
+  position: relative;
+}
+ .pic_mercury{
+  height: 66.6%;
+} 
+.pic_venus{
+  height: 100%;
+}
+.pic_earth{
+  height: 100%;
+}
+
+.pic_mars{
+  height: 50%;
+}
+.pic_jupiter{
+  height: 300%;
+}
+
+.pic_saturn{
+  height: 275%;
+}
+
+.pic_uranus{
+  height: 150%;
+}
+
+.pic_neptune{
+  height: 150%;
+}
+
+.pic_pluto{
+  height: 20%;
+}
+
+.sun{
+  height: 120%;
+  position: absolute;
+  bottom: 90px;
+}
+
+.mercury {
+  margin-left: 10%;
+}
+
+.everything{
+z-index: 1;
+height: 150%; 
+float: center; 
+position: inline-block;
+overflow: hidden;
+width: 150%;
+margin-top: 5%;
+  display: relative;
+}
+.planet{
+  float:left;
+  margin-right: 2%;
+  margin-top: 10%;
+  position: relative;
+}
+.jupiter {
+  margin-left:15%;
+}
+.saturn{
+  margin-left: 5%;
+}
+.uranus{
+  margin-left:5%;
+}
+.neptune{
+  margin-left: 2%;
+}
+.pluto{
+  margin-left: 2%;
+}
+
+
+body {
+  background: url("../images/Star_bg1.png");
+  background-size: cover;
+}
+
+.hidden{
+  display:none;
+}
+.info{
+  z-index: 1; 
+  color: white;
+  font-family: 'Homenaje', sans-serif;
+  position: absolute;
+  opacity: 60%;
+  text-align: left;
+  border: 4px solid white;
+  left: -230px;
+  right: -230px;
+  bottom: -290px;
+  font-size: 120%;
+  background: black;
+  opacity: 0.6;
+  padding-top: 1px;
+  padding-left: 5px;
+  animation-name: info-animation; 
+  animation-duration: 1s;
+  }
+  
+    @keyframes info-animation{
+    from{bottom: -190px;}
+    to{bottom: -290px;}
+  }
+h3.name{
+  position:absolute;
+  top: -50px;
+  z-index: 100;
+  animation-name: h3-anim;
+  animation-duration: 0.5s;
+  
+}
+@keyframes h3-anim{
+  from{opacity: 0;}
+  to{opacity: 1;}
+}
+
+*{
+  color: white;
+  font-family: 'Offside', cursive;
+}
+
+
+
+.scale-div {
+  color: white;
+  position: fixed;
+  right: 2%;
+  bottom: 2%;
+  width: 20%;
+  text-align: right;
+  height: 6.5%;
+  opacity: 0.4;
+}
+
+.info-pluto{
+  z-index: 1; 
+  color: white;
+   font-family: 'Homenaje', sans-serif;
+   position: absolute;
+   opacity: 60%;
+   text-align: left;
+   font-size: 120%;
+  background: black;
+  opacity: 0.6;
+  padding-top: 1px;
+  padding-left: 5px;
+   left: -220px;
+   right: -10px;
+   bottom: -250px;
+  border: 4px solid white;
+  animation-name: pluto-info-animation;
+  animation-duration: 1s;
+}
+@keyframes pluto-info-animation{
+    from{bottom: -190px;}
+    to{bottom: -250px;}
+  }
+
+.sun-info{
+  margin-bottom: 300px;
+  margin-left: 240px;
+  width: 450px;
+}
+@keyframes sun-anim{
+  from{bottom:75px;}
+  to{bottom:100px;}
+}
+h1{
+  font-family: 'Homenaje', sans-serif;
+  position: fixed;
+  top: -25px;
+  left: 37%;
+  font-size: 300%;
+  text-align: center;
+
+}
+button{
+  font-size: 110%;
+  position: fixed;
+  left:37.3%;
+  background-color: #1D1016;
+  top: 57px;
+  padding-right: 0.9px;
+  padding-left: 0.9px;
+}
+
+/*   IF WE WANT TRUE SPACING 
+   || CALCULATED USING 22,993,333 AS 1% AND 2,993,333,300 AS 100% || 
+   ||                         2200px = 100%                       ||*/
+ 
+  .mercury-real{
+  margin-left: 79.2px;
+  animation-name: "mercury-anim";
+  animation-duration:10s;
+}
+@keyframes mercury-anim{
+  from{margin-left: 0px;}
+  to{margin-left:79.2px;}
+}
+
+.venus-real{
+  margin-left: 99px;
+  animation-name:"venus-anim";
+  animation-duration:2s;
+}
+@keyframes venus-anim{
+  from{margin-left: 0px;};
+  to{margin-left: 99px;};
+}
+
+.earth-real{
+  margin-left: 354px;
+  animation-name:"earth-anim";
+  animation-duration:2s;
+}
+@keyframes earth-anim{
+  from{margin-left: 0px;};
+  to{margin-left:354px;};
+}
+.mars-real{
+  margin-left: 303.6px;
+  animation-name: "mars-anim";
+  animation-duration: 2s;
+}
+@keyframes mars-anim{
+  from{margin-left: 0px;;};
+  to{margin-left: 303.6px;};
+}
+.jupiter-real{
+  margin-left: 752.4px;
+  animation-name:"jupiter-anim";
+  animation-duration:2s;
+}
+@keyframes jupiter-anim{
+  from{margin-left: 15px;}
+  to {margin-left:250.8px;};
+ 
+}
+
+.saturn-real{
+  margin-left: 785.4px;
+  animation-name: "saturn-anim";
+  animation-duration: 2s;
+}
+@keyframes saturn-anim{
+  from{margin-left:5px;};
+  to{margin-left:785.4px;};
+}
+.neptune-real{
+  margin-left: 1980px;
+  animation-name: "neptune-anim";
+  animation-duration: 2s;
+}
+ @keyframes neptune-anim{
+  from{margin-left: 5px;};
+  to{margin-left: 1980px;};
+}
+
+.uranus-real{
+  margin-left: 1892px;
+  animation-name: "uranus-anim";
+  animation-duration: 2s;
+}
+@keyframes uranus-anim{
+  from{margin-left: 2px;};
+  to{margin-left: 1892px;};
+}
+.pluto-real{
+  margin-left: 902px;
+  animation-name: "pluto-anim";
+  animation-duration: 2s;
+} 
+
+@keyframes pluto-anim{
+  from{margin-left:2px;};
+  to{margin-left:902px;};
+} 
+
+a{
+  text-decoration: none;
+}
+ 
+.everything-scaled{
+  z-index: 1;
+height: 150%; 
+float: center; 
+position: inline-block;
+overflow: hidden;
+width: 8000px;
+margin-top: 5%;
+} 
+
+.sun-real{
+  size: 500%;
+}
+.planet-real{
+  float:left;
+  margin-right: 2%;
+  margin-top: 10%;
+  position: relative;
+  margin-bottom: 5%;
+}
+
+#btn1{
+  font-size: 110%;
+  position: fixed;
+  left:39.3%;
+  background-color: #1D1016;
+  top: 88px;
+  padding-right: 0.9px;
+  padding-left: 0.9px;
+}
+
